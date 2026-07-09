@@ -232,7 +232,7 @@
     // start immediately, then rotate every ~2.2–3.2s (randomized interval)
     setTextRandom();
     function loop() {
-      const next = 2200 + Math.random() * 5000;
+      const next = 7500;
       setTimeout(() => { setTextRandom(); loop(); }, next);
     }
     loop();
