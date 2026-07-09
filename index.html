@@ -208,7 +208,9 @@
       "Did you pay for parking?",
       "This site is under construction. Go watch old-school AVGN.",
       "We're coding away at this, come back some other time.",
-      "Gaming metal is a thing now, the world is healing..."
+      "Gaming metal is a thing now, the world is healing...",
+      "We're coding away, but you don't have to stare.",
+      "This website definitely existed, crashed in a catastrophic manner and we're redeploying..."
     ];
 
     const el = document.getElementById("sub");
@@ -232,7 +234,7 @@
     // start immediately, then rotate every ~2.2–3.2s (randomized interval)
     setTextRandom();
     function loop() {
-      const next = 7500;
+      const next = 5000;
       setTimeout(() => { setTextRandom(); loop(); }, next);
     }
     loop();
